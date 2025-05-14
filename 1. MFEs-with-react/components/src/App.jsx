@@ -1,7 +1,7 @@
 import React from "react";
 import CardDetails from "./components/CardDetails.jsx";
 import CardShort from "./components/CardShort.jsx";
-import { Button, SaltProvider } from "@salt-ds/core";
+import { SaltProvider } from "@salt-ds/core";
 import "@salt-ds/theme/index.css";
 
 const App = () => {
@@ -19,9 +19,6 @@ const App = () => {
 
   return (
     <SaltProvider>
-      <Button sentiment="accented" appearance="solid">
-        Button
-      </Button>
       <div>
         <CardDetails data={cardDetails} />
       </div>
